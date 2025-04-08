@@ -20,11 +20,15 @@
   --bnt-hover-bg-color: #003b99;
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --footer-bg-color: #040d12;
+  --course-color: #3d86fa;
 }
 html {
   font-size: 62.5%;
 
   /* 1rem=10px */
+}
+bdoy {
+  background-color: var(--bg-color);
 }
 
 h1,
@@ -46,6 +50,7 @@ a {
   font-weight: 400;
   color: var(--para-color);
 }
+
 a .fa-user {
   font-size: 2rem;
   text-decoration: none;
@@ -68,7 +73,8 @@ samp {
 
   /* 1420px */
   margin: 0 10%;
-  padding: 9.6rem 2.4rem;
+  /* padding: 9.6rem 2.4rem; */
+  padding-bottom: 7.4rem;
 }
 /*-- ============= start main section=============  */
 .section-grid--grid-two--cols {
@@ -104,7 +110,8 @@ samp {
     display: inline;
     color: var(--heading-color);
     font-size: 1.6rem;
-    text-transform: capitalize;
+    font-weight: 800;
+    text-transform: uppercase;
     position: relative;
   }
   & a::after {
@@ -163,6 +170,12 @@ main {
   align-items: center;
   gap: 6.4rem;
 }
+.grid-three--cols {
+  display: grid;
+  padding: 0 10%;
+  gap: 4.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
 .container {
   padding-top: 5.4rem;
 }
@@ -194,7 +207,7 @@ h1 samp {
 }
 
 h1 samp::after {
-  content: "ametbr dolor";
+  content: "Rashedul Islam";
   display: inline-block;
   position: absolute;
   color: var(--bg-color);
@@ -245,5 +258,224 @@ h1 samp::after {
 .custom-shape-divider-bottom-1744049628 .shape-fill {
   fill: #ffffff;
 }
+.discription {
+  color: var(--bg-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  color: var(--para-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+.para-four {
+  color: var(--para-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+.two {
+  color: var(--para-color);
+}
 
 /*-- ============= End main section=============  */
+
+/* -- ============= start about section=============  */
+.about-div {
+  text-align: center;
+  padding-bottom: 6.3rem;
+}
+.about-heading {
+  padding-bottom: 2rem;
+  font-size: 2.6rem;
+}
+.section-about .container {
+  padding: 10rem 0 15rem 0;
+}
+.about-common--heading {
+  font-size: 2.5rem;
+  padding: 3.5rem 0 2rem 0;
+  text-transform: capitalize;
+}
+.about-div .icon img {
+  width: 13rem;
+  height: auto;
+
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.about-div .icon {
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.about-div .icon:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.container-course {
+  background-color: var(--supporting-color);
+  padding-bottom: 6rem;
+}
+.container {
+  padding: 6rem 0rem;
+}
+.grid-four-cols {
+  padding: 0 10%;
+}
+.icone .fa-solid {
+  font-size: 2rem;
+  padding: 1rem;
+
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.sub-titel {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.grid-four-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 6.4rem;
+}
+.container-course-box {
+  text-transform: capitalize;
+  padding: 2rem 2rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+.container-course-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.grid-four-cols {
+  color: var(--course-color);
+}
+
+.btn-learing-more .btn {
+  /* padding-right: 2rem; */
+  margin-top: 2rem;
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.course-container :nth-child(1) .icone .fa-solid {
+  color: #af72af;
+  background-color: #f1caf1;
+}
+.course-container :nth-child(2) .icone .fa-solid {
+  color: #aaaa0b;
+  background-color: #f1f1ca;
+}
+.course-container :nth-child(3) .icone .fa-solid {
+  color: #8427cf;
+  background-color: #c066c0;
+}
+.course-container :nth-child(4) .icone .fa-solid {
+  color: #d808c7;
+  background-color: #c280a9;
+}
+.course-container :nth-child(5) .icone .fa-solid {
+  color: #d80858;
+  background-color: #e28fa8;
+}
+.course-container :nth-child(6) .icone .fa-solid {
+  color: #08d808;
+  background-color: #99e28f;
+}
+.course-container :nth-child(7) .icone .fa-solid {
+  color: #bd540e;
+  background-color: #e2b08f;
+}
+.course-container :nth-child(8) .icone .fa-solid {
+  color: #da180a;
+  background-color: #e28f8f;
+}
+/* -- ============= End course section=============  */
+
+/* -- =============Start Why Choose-me section=============  */
+.why-choose--me {
+  padding: 6rem 10%;
+}
+.container-heading h3 {
+  font-size: 2.7rem;
+  padding-bottom: 2rem;
+}
+
+/* -- ============= End Why Choose-me section=============  */
+
+.section-contact-homepage {
+  width: 60%;
+  height: 30rem;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.section-contact-homepage img {
+  width: 100%;
+}
+.contact-content {
+  font-size: 3rem;
+}
+.content-discription {
+  font-size: 1.6rem;
+  padding: 1rem 0 1rem 0;
+}
+.btn .fa-arrow-right {
+  color: var(--main-color);
+  padding: 1rem;
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+.contact-btn--page {
+  font-size: 1.8rem;
+  color: var(--bg-color);
+}
+
+/* footer */
+footer {
+  color: white;
+  margin-top: 6.4rem;
+  background-color: rebeccapurple;
+}
+.footer-section {
+  margin: 0 auto;
+}
+.grid-four-cols {
+  display: grid;
+  place-content: center;
+}
+.section-contact-homepage {
+  z-index: 1;
+}
