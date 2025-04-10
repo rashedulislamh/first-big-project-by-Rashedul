@@ -467,8 +467,11 @@ h1 samp::after {
 footer {
   color: white;
   margin-top: 6.4rem;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
+  background-color: var(--footer-bg-colordd);
+  padding-top: 6.4rem;
 }
+
 .footer-section {
   margin: 0 auto;
 }
@@ -478,4 +481,8 @@ footer {
 }
 .section-contact-homepage {
   z-index: 1;
+}
+
+.thard-container {
+  color: var(--bg-color);
 }
